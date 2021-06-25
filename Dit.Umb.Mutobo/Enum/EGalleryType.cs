@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.Enum
+﻿namespace Sss.Mutobo.Core.Enum
 {
     public enum EGalleryType
     {

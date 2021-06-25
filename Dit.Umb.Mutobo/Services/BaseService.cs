@@ -4,7 +4,7 @@ using Umbraco.Core.Scoping;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public abstract class BaseService
     {

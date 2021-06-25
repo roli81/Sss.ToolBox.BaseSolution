@@ -1,7 +1,7 @@
 ﻿using System.Web;
-using Dit.Umb.Mutobo.Enum;
+using Sss.Mutobo.Core.Enum;
 
-namespace Dit.Umb.Mutobo.Interfaces
+namespace Sss.Mutobo.Core.Interfaces
 {
     public interface ITheme
     {

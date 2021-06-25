@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Link = Umbraco.Web.Models.Link;
 
 
-namespace Dit.Umb.Mutobo.Configuration
+namespace Sss.Mutobo.Core.Configuration
 {
     public class EmptyHeaderConfiguration : IHeaderConfiguration
     {

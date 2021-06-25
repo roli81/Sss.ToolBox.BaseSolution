@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 using Umbraco.Web.Mvc;

@@ -1,9 +1,9 @@
 ﻿using System.Web.Mvc;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Web.Mvc;
 
-namespace Dit.Umb.Mutobo.Controllers.SurfaceControllers
+namespace Sss.Mutobo.Core.Controllers.SurfaceControllers
 {
     public class CookieBannerController : SurfaceController
     {

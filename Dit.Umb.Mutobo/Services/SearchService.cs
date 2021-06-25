@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Dit.Umb.Mutobo.Common.Exceptions;
-using Dit.Umb.Mutobo.Common.Extensions;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Common.Exceptions;
+using Sss.Mutobo.Core.Common.Extensions;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Examine;
 using Examine.Search;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
-using SearchResult = Dit.Umb.Mutobo.PoCo.SearchResult;
-using DictionaryKeys = Dit.Umb.Mutobo.Constants.DictionaryKeys;
-using DocumentTypes = Dit.Umb.Mutobo.Constants.DocumentTypes;
-using SearchResultModel = Dit.Umb.Mutobo.PageModels.SearchResultModel;
+using SearchResult = Sss.Mutobo.Core.PoCo.SearchResult;
+using DictionaryKeys = Sss.Mutobo.Core.Constants.DictionaryKeys;
+using DocumentTypes = Sss.Mutobo.Core.Constants.DocumentTypes;
+using SearchResultModel = Sss.Mutobo.Core.PageModels.SearchResultModel;
 
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class SearchService : BaseService, ISearchService
     {

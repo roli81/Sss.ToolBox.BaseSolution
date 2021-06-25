@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Web.Mvc;
 
-namespace Dit.Umb.Mutobo.Common.Extensions
+namespace Sss.Mutobo.Core.Common.Extensions
 {
     public static class DateTimeExtensions
     {

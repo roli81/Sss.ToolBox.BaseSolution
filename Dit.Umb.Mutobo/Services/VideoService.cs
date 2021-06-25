@@ -1,9 +1,9 @@
-﻿using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+﻿using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class VideoService : IVideoService
     {

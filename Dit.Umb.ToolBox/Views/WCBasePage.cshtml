@@ -1,8 +1,8 @@
-﻿ @inherits Umbraco.Web.Mvc.UmbracoViewPage<Dit.Umb.Mutobo.PageModels.BasePage>
+﻿ @inherits Umbraco.Web.Mvc.UmbracoViewPage<Sss.Mutobo.Core.PageModels.BasePage>
 @using System.Globalization
 @using ClientDependency.Core.Mvc
-@using Dit.Umb.Mutobo.Configuration
-@using Dit.Umb.Mutobo.Interfaces
+@using Sss.Mutobo.Core.Configuration
+@using Sss.Mutobo.Core.Interfaces
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
     Layout = null;
@@ -48,7 +48,7 @@
     <p-general>
         @Html.Partial("~/Views/Partials/Header.cshtml", Model.HeaderConfiguration)
         @RenderBody()
-        @Html.Partial("~/Views/Partials/Footer.cshtml", Model.FooterConfiguration as Dit.Umb.Mutobo.Configuration.FooterConfiguration)
+        @Html.Partial("~/Views/Partials/Footer.cshtml", Model.FooterConfiguration as Sss.Mutobo.Core.Configuration.FooterConfiguration)
     </p-general>
 @Html.Action("Index", "WcRender")
 @Html.RenderJsHere()

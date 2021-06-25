@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Umbraco.Core.Composing;
 
-namespace Dit.Umb.Mutobo.Components
+namespace Sss.Mutobo.Core.Components
 {
 
     /// <summary>

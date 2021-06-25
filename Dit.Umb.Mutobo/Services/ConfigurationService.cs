@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
-using Dit.Umb.Mutobo.Common.Exceptions;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Common.Exceptions;
+using Sss.Mutobo.Core.Interfaces;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class ConfigurationService :  BaseService, IConfigurationService
     {

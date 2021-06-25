@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Interfaces;
 using Dit.Umb.ToolBox.Services;
 using Umbraco.Web.Mvc;
 

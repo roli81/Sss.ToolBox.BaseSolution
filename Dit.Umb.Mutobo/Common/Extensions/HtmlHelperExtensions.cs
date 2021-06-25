@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Umbraco.Core.Services.Implement;
 
-namespace Dit.Umb.Mutobo.Common.Extensions
+namespace Sss.Mutobo.Core.Common.Extensions
 {
     public static class HtmlHelperExtensions
     {

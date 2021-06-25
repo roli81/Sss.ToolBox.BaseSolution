@@ -7,9 +7,9 @@
     <ProjectGuid>{2147941A-3725-4B64-84BB-7FDA22DE4066}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dit.Umb.Mutobo</RootNamespace>
-    <AssemblyName>Dit.Umb.Mutobo</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>Sss.Mutotobo.Web</RootNamespace>
+    <AssemblyName>Sss.Mutotobo.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
@@ -474,16 +474,6 @@
     <None Include="app.config" />
     <None Include="Controllers\PageControllers\SearchResultsController.cs.bak" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Dit.Umb.Toolbox.Common.ContentExtensions\Dit.Umb.Toolbox.Common.ContentExtensions.csproj">
-      <Project>{63e7bef0-7bd7-4cb0-bb41-d6b19c949225}</Project>
-      <Name>Dit.Umb.Toolbox.Common.ContentExtensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dit.Umb.Toolbox.Common\Dit.Umb.ToolBox.Common.csproj">
-      <Project>{6688f7e3-0fa5-4cac-8256-805dacaf2c57}</Project>
-      <Name>Dit.Umb.ToolBox.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Compositions\" />

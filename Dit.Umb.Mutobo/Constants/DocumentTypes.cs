@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.Constants
+﻿namespace Sss.Mutobo.Core.Constants
 {
     public static class DocumentTypes
     {

@@ -16,7 +16,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Dit.Umb.ToolBox</RootNamespace>
     <AssemblyName>Dit.Umb.ToolBox</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -276,7 +276,6 @@
       <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Umbraco.SqlServerCE.4.0.0.1\lib\net472\System.Data.SqlServerCe.dll</HintPath>
@@ -333,7 +332,6 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
@@ -385,7 +383,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="UglyToad.PdfPig, Version=0.1.3.0, Culture=neutral, PublicKeyToken=605d367334e74123, processorArchitecture=MSIL">
       <HintPath>..\packages\PdfPig.0.1.3\lib\net47\UglyToad.PdfPig.dll</HintPath>
     </Reference>
@@ -614,17 +611,9 @@
     <Content Include="Views\Partials\Accordeon.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dit.Umb.Mutobo\Dit.Umb.Mutobo.csproj">
+    <ProjectReference Include="..\Dit.Umb.Mutobo\Sss.Mutobo.Core.csproj">
       <Project>{2147941A-3725-4B64-84BB-7FDA22DE4066}</Project>
-      <Name>Dit.Umb.Mutobo</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dit.Umb.Toolbox.Common.ContentExtensions\Dit.Umb.Toolbox.Common.ContentExtensions.csproj">
-      <Project>{63e7bef0-7bd7-4cb0-bb41-d6b19c949225}</Project>
-      <Name>Dit.Umb.Toolbox.Common.ContentExtensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dit.Umb.Toolbox.Common\Dit.Umb.ToolBox.Common.csproj">
-      <Project>{6688f7e3-0fa5-4cac-8256-805dacaf2c57}</Project>
-      <Name>Dit.Umb.ToolBox.Common</Name>
+      <Name>Sss.Mutobo.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

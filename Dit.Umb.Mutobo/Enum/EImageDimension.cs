@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Dit.Umb.Mutobo.Enum
+namespace Sss.Mutobo.Core.Enum
 {
     [JsonConverter(typeof(StringEnumConverter))]
     public enum EImageDimension

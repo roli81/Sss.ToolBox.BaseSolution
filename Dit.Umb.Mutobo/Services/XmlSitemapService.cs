@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PageModels;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PageModels;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class XmlSitemapService : BaseService, IXmlSitemapServicecs
     {

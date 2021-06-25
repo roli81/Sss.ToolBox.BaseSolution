@@ -2,7 +2,7 @@
 using System.Text;
 using System.Web;
 
-namespace Dit.Umb.Mutobo.Common.Classes
+namespace Sss.Mutobo.Core.Common.Classes
 {
     public class MyCustomStream : Stream
     {

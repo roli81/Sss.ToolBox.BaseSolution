@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Dit.Umb.Mutobo.Common;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.Modules;
-using Dit.Umb.Mutobo.PageModels;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Common;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.Modules;
+using Sss.Mutobo.Core.PageModels;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.Web.Models;
-using DocumentTypes = Dit.Umb.Mutobo.Constants.DocumentTypes;
+using DocumentTypes = Sss.Mutobo.Core.Constants.DocumentTypes;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class MutoboContentService : BaseService, IMutoboContentService
     {

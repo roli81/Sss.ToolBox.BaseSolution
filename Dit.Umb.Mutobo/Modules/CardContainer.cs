@@ -3,11 +3,11 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.Modules
+namespace Sss.Mutobo.Core.Modules
 {
     public class CardContainer : MutoboContentModule, IModule
     {

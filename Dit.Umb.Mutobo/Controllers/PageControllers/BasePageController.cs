@@ -1,16 +1,16 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Dit.Umb.Mutobo.Common.ActionFilters;
-using Dit.Umb.Mutobo.Common.Exceptions;
-using Dit.Umb.Mutobo.Configuration;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PageModels;
+using Sss.Mutobo.Core.Common.ActionFilters;
+using Sss.Mutobo.Core.Common.Exceptions;
+using Sss.Mutobo.Core.Configuration;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PageModels;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 using Umbraco.Web.Mvc;
 
-namespace Dit.Umb.Mutobo.Controllers.PageControllers
+namespace Sss.Mutobo.Core.Controllers.PageControllers
 {
     [CompressionCleaner]
     [LanguageRedirector]

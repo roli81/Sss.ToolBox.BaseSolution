@@ -1,9 +1,9 @@
-﻿using Dit.Umb.Mutobo.Constants;
+﻿using Sss.Mutobo.Core.Constants;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.Web.Models;
 
-namespace Dit.Umb.Mutobo.Configuration
+namespace Sss.Mutobo.Core.Configuration
 {
     public class MailConfiguration : ContentModel
     {

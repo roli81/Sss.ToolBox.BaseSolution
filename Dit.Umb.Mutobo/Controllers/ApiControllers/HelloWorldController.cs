@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Umbraco.Web.WebApi;
 
-namespace Dit.Umb.Mutobo.Controllers.ApiControllers
+namespace Sss.Mutobo.Core.Controllers.ApiControllers
 {
     public class HelloWorldController : UmbracoApiController
     {

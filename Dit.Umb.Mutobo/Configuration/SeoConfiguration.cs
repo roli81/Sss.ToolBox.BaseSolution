@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.Configuration
+﻿namespace Sss.Mutobo.Core.Configuration
 {
     public class SeoConfiguration
     {

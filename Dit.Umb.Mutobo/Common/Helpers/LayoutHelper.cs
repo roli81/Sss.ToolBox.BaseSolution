@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 
-namespace Dit.Umb.Mutobo.Common.Helpers
+namespace Sss.Mutobo.Core.Common.Helpers
 {
     public static class LayoutHelper
     {

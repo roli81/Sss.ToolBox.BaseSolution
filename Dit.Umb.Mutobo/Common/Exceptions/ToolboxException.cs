@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.Common.Exceptions
+﻿namespace Sss.Mutobo.Core.Common.Exceptions
 {
     public class ToolboxException : System.Exception
     {

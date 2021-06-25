@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.PageModels;
+using Sss.Mutobo.Core.PageModels;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.Interfaces
+namespace Sss.Mutobo.Core.Interfaces
 {
     public interface IXmlSitemapServicecs
     {

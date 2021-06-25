@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.PageModels
+namespace Sss.Mutobo.Core.PageModels
 {
     public class TeaserPage : ArticlePage
     {

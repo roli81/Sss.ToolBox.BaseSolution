@@ -2,10 +2,10 @@
 using System.IO;
 using System.Linq;
 using System.Web;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
-using Dit.Umb.Mutobo.Services;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
+using Sss.Mutobo.Core.Services;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 

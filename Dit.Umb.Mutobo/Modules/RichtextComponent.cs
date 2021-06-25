@@ -1,11 +1,11 @@
 ﻿using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using Dit.Umb.Mutobo.Constants;
+using Sss.Mutobo.Core.Constants;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.Modules
+namespace Sss.Mutobo.Core.Modules
 {
     public class RichtextComponent : MutoboContentModule
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Dit.Umb.Mutobo.Constants;
+using Sss.Mutobo.Core.Constants;
 using Examine;
 using Examine.LuceneEngine.Providers;
 using Examine.Providers;
@@ -14,7 +14,7 @@ using Umbraco.Web;
 using Umbraco.Web.Composing;
 using UmbracoExamine.PDF;
 
-namespace Dit.Umb.Mutobo.Components
+namespace Sss.Mutobo.Core.Components
 {
     [ComposeAfter(typeof(ExaminePdfComposer))]
     public class RegisterPDFMultiSearcherComposer : ComponentComposer<SearchConfigurationComponent>, IUserComposer

@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Dit.Umb.Mutobo.Common.Exceptions;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.Services;
+using Sss.Mutobo.Core.Common.Exceptions;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.Services;
 using Umbraco.Core.Composing;
 using Umbraco.Core.PropertyEditors;
 using Umbraco.Web.PropertyEditors;
 
-namespace Dit.Umb.Mutobo.Components
+namespace Sss.Mutobo.Core.Components
 {
     public class CustomDropDownPopulateComponent : IComponent
     {

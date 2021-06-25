@@ -2,7 +2,7 @@
 using Examine;
 using Umbraco.Core.Composing;
 
-namespace Dit.Umb.Mutobo.Components
+namespace Sss.Mutobo.Core.Components
 {
     public class CustomIndexComponent : IComponent
     {

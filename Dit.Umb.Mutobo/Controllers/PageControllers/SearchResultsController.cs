@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
 using Umbraco.Web.Models;
-using SearchResultModel = Dit.Umb.Mutobo.PageModels.SearchResultModel;
+using SearchResultModel = Sss.Mutobo.Core.PageModels.SearchResultModel;
 
-namespace Dit.Umb.Mutobo.Controllers.PageControllers
+namespace Sss.Mutobo.Core.Controllers.PageControllers
 {
     public class SearchResultsController : BasePageController
     {

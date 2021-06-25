@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using Dit.Umb.Mutobo.Common;
-using Dit.Umb.Mutobo.Configuration;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Common;
+using Sss.Mutobo.Core.Configuration;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Core.Services;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class PageLayoutService : BaseService, IPageLayoutService
     {

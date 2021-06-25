@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.PageModels;
+using Sss.Mutobo.Core.PageModels;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web.Models;
 
-namespace Dit.Umb.Mutobo.Interfaces
+namespace Sss.Mutobo.Core.Interfaces
 {
     public interface ITeaserService
     {

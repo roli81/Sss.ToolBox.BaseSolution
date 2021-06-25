@@ -1,6 +1,6 @@
-﻿using Dit.Umb.Mutobo.Interfaces;
+﻿using Sss.Mutobo.Core.Interfaces;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class PdfService : IPdfService
     {

@@ -1,12 +1,12 @@
 ﻿using System.Text;
 using System.Web;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Enum;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Enum;
+using Sss.Mutobo.Core.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.PoCo
+namespace Sss.Mutobo.Core.PoCo
 {
     public class Theme : PublishedElementModel, ITheme
     {

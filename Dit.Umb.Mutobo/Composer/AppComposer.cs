@@ -1,14 +1,14 @@
 ﻿
-using Dit.Umb.Mutobo.Components;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.Services;
+using Sss.Mutobo.Core.Components;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.Services;
 using Dit.Umb.ToolBox.Services.Impl;
 using MissingCode.Umbraco.HtmlMinifier;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
 
 
-namespace Dit.Umb.Mutobo.Composer
+namespace Sss.Mutobo.Core.Composer
 {
     public class AppComposer : IUserComposer
     {

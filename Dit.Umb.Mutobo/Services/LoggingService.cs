@@ -1,8 +1,8 @@
 ﻿using System;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class LoggingService : BaseService, ILoggingService
     {

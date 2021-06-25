@@ -3,13 +3,13 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Enum;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Enum;
+using Sss.Mutobo.Core.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.Modules
+namespace Sss.Mutobo.Core.Modules
 {
     public class SliderComponent : MutoboContentModule, ISliderComponent, IModule
     {

@@ -1,10 +1,10 @@
-﻿using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.Modules;
+﻿using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.Modules;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.PoCo
+namespace Sss.Mutobo.Core.PoCo
 {
     public class TextImageSlide : MutoboContentModule, ISliderItem
     {

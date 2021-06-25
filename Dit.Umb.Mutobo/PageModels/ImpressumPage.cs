@@ -1,8 +1,8 @@
-﻿using Dit.Umb.Mutobo.Constants;
+﻿using Sss.Mutobo.Core.Constants;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.PageModels
+namespace Sss.Mutobo.Core.PageModels
 {
     public class ImpressumPage : BasePage
     {

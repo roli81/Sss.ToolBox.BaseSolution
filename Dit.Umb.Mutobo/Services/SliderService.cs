@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.Modules;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.Modules;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
-using DocumentTypes = Dit.Umb.Mutobo.Constants.DocumentTypes;
+using DocumentTypes = Sss.Mutobo.Core.Constants.DocumentTypes;
 
 namespace Dit.Umb.ToolBox.Services.Impl
 {

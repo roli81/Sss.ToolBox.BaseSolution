@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Interfaces;
 
-namespace Dit.Umb.Mutobo.PoCo
+namespace Sss.Mutobo.Core.PoCo
 {
     public class SearchResultModel : ISearchResultsModel
     {

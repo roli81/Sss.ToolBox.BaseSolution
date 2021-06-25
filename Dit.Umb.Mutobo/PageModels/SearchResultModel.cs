@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.PageModels
+namespace Sss.Mutobo.Core.PageModels
 {
     public class SearchResultModel : BasePage, ISearchResultsModel
     {

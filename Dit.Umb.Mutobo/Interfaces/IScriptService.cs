@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.Interfaces
+﻿namespace Sss.Mutobo.Core.Interfaces
 {
     public interface IScriptService
     {

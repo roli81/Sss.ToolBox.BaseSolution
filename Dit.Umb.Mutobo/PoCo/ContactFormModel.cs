@@ -1,6 +1,6 @@
-﻿using Dit.Umb.Mutobo.Configuration;
+﻿using Sss.Mutobo.Core.Configuration;
 
-namespace Dit.Umb.Mutobo.PoCo
+namespace Sss.Mutobo.Core.PoCo
 {
     public class ContactFormModel
     {

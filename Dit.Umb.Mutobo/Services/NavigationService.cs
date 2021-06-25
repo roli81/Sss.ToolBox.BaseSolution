@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Dit.Umb.Mutobo.Common;
-using Dit.Umb.Mutobo.Common.Exceptions;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PageModels;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Common;
+using Sss.Mutobo.Core.Common.Exceptions;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PageModels;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class NavigationService : BaseService, INavigationService
     {

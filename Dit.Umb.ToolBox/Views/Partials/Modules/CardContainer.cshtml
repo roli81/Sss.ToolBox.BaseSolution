@@ -1,6 +1,6 @@
-﻿@using Dit.Umb.Mutobo.PoCo
+﻿@using Sss.Mutobo.Core.PoCo
 @using Dit.Umb.Sparx.Constants
-@model Dit.Umb.Mutobo.Modules.CardContainer
+@model Sss.Mutobo.Core.Modules.CardContainer
 
 <o-teaser-wrapper>
     @*TODO: Remove this CRAP! *@ 
@@ -20,7 +20,7 @@
         <m-teaser>
             <a @($"{href} {target}")>
                 @card.Image.RenderWcPictureTag(height: $"{card.Image.Height}px", width: $"{card.Image.Width}px")
-                @if (card is Dit.Umb.Mutobo.PoCo.PersonnelCard personnelCard)
+                @if (card is Sss.Mutobo.Core.PoCo.PersonnelCard personnelCard)
                 {
                     <br/>
                     <div>

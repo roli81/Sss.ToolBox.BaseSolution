@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Enum;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Enum;
+using Sss.Mutobo.Core.Interfaces;
 
-namespace Dit.Umb.Mutobo.Modules
+namespace Sss.Mutobo.Core.Modules
 {
     public class EmptySliderComponent : ISliderComponent
     {

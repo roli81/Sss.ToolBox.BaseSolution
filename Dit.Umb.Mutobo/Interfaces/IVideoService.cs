@@ -1,7 +1,7 @@
-﻿using Dit.Umb.Mutobo.PoCo;
+﻿using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.Interfaces
+namespace Sss.Mutobo.Core.Interfaces
 {
     public interface IVideoService
     {

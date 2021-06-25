@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using Dit.Umb.Mutobo.Common.Classes;
+using Sss.Mutobo.Core.Common.Classes;
 
-namespace Dit.Umb.Mutobo.Common.ActionFilters
+namespace Sss.Mutobo.Core.Common.ActionFilters
 {
     public class CompressionCleaner : ActionFilterAttribute
     {

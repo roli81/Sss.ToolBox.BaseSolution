@@ -6,7 +6,7 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 
-namespace Dit.Umb.Mutobo.Common.ActionFilters
+namespace Sss.Mutobo.Core.Common.ActionFilters
 {
     public class LanguageRedirector : ActionFilterAttribute
     {

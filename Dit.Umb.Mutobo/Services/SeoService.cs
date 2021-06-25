@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Linq;
-using Dit.Umb.Mutobo.Common;
-using Dit.Umb.Mutobo.Configuration;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Common;
+using Sss.Mutobo.Core.Configuration;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.Web.Composing;
 using Umbraco.Web.Models;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class SeoService : ISeoService
     {

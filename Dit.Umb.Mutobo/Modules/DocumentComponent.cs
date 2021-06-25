@@ -1,6 +1,6 @@
 ﻿using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.Modules
+namespace Sss.Mutobo.Core.Modules
 {
     public class DocumentComponent : MutoboContentModule
     {

@@ -1,11 +1,11 @@
 ﻿using System.Net.Mail;
 using System.Text;
-using Dit.Umb.Mutobo.Configuration;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Configuration;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.Services
+namespace Sss.Mutobo.Core.Services
 {
     public class MailService : BaseService, IMailService
     {

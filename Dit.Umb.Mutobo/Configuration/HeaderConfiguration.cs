@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PoCo;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PoCo;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
-using Language = Dit.Umb.Mutobo.PoCo.Language;
+using Language = Sss.Mutobo.Core.PoCo.Language;
 using Link = Umbraco.Web.Models.Link;
 
 
-namespace Dit.Umb.Mutobo.Configuration
+namespace Sss.Mutobo.Core.Configuration
 {
     public class HeaderConfiguration : PublishedElementModel, IHeaderConfiguration
     {

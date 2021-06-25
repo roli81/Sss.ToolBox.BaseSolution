@@ -1,4 +1,4 @@
-﻿namespace Dit.Umb.Mutobo.PoCo
+﻿namespace Sss.Mutobo.Core.PoCo
 {
     public class Language
     {

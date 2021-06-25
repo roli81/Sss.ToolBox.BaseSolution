@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Dit.Umb.Mutobo.Modules;
+using Sss.Mutobo.Core.Modules;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Dit.Umb.Mutobo.PageModels
+namespace Sss.Mutobo.Core.PageModels
 {
     public class HomePage : BasePage
     {

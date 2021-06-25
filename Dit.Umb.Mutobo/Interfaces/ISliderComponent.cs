@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Dit.Umb.Mutobo.Interfaces
+namespace Sss.Mutobo.Core.Interfaces
 {
     public interface ISliderComponent
     {

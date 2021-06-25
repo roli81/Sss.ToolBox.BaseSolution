@@ -1,11 +1,11 @@
 ﻿using System.Web.Mvc;
-using Dit.Umb.Mutobo.Constants;
-using Dit.Umb.Mutobo.Interfaces;
-using Dit.Umb.Mutobo.PageModels;
+using Sss.Mutobo.Core.Constants;
+using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutobo.Core.PageModels;
 using Umbraco.Core.Logging;
 using Umbraco.Web.Models;
 
-namespace Dit.Umb.Mutobo.Controllers.PageControllers
+namespace Sss.Mutobo.Core.Controllers.PageControllers
 {
     public class HomePageController : BasePageController
     {

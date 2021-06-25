@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
-using Dit.Umb.Mutobo.Interfaces;
+using Sss.Mutobo.Core.Interfaces;
 using Umbraco.Web.Mvc;
 
-namespace Dit.Umb.Mutobo.Controllers.SurfaceControllers
+namespace Sss.Mutobo.Core.Controllers.SurfaceControllers
 {
     public class FooterController : SurfaceController
     {
