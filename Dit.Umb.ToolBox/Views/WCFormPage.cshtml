@@ -1,0 +1,15 @@
+﻿@using Dit.Umb.Mutobo.PoCo
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Dit.Umb.Mutobo.PageModels.FormPage>
+
+@{
+    Layout = "WCBasePage.cshtml";
+}
+
+
+<o-body>
+    <h1>@Model.PageTitle</h1>
+
+    <div>
+        @Html.Partial("~/Views/Partials/SimpleContactForm.cshtml", new ContactFormModel() { Customer = Model.CustomerConfiguration, Receiver = Model.ReceiverConfiguration })
+    </div>
+</o-body>

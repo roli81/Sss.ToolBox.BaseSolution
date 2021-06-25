@@ -1,0 +1,20 @@
+﻿@using ClientDependency.Core.Mvc
+@using Dit.Umb.Mutobo.PoCo
+@using Umbraco.Web.Composing
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Dit.Umb.Mutobo.PageModels.HomePage>
+@{
+    Layout = "WCBasePage.cshtml";
+
+
+}
+
+<o-body>
+
+    @if (Model.Modules != null && Model.Modules.Any())
+    {
+        foreach (var module in Model.Modules)
+        {
+            @module.RenderModule(this.Html)
+        }
+    }
+</o-body>
