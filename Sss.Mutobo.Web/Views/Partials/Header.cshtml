@@ -1,15 +1,9 @@
 ﻿@model Sss.Mutobo.Core.Interfaces.IHeaderConfiguration
 <o-header mobile-breakpoint="100vw" no-scroll="nav-open" menu-icon="true" namespace="header-">
-    @if (Model.GlobalSlogan != null)
-    {
-        // TODO only show on home-page
-        <a-title namespace="header-title-">
-            <h1>
-                <span>@Model.GlobalSlogan.Title.ToUpper()</span>
-                <span class="secondary-color">@Model.GlobalSlogan.SubTitle</span>
-            </h1>
-        </a-title>
-    }
+
+    
+    <a-logo namespace="header-" src="@Model.Logo.DefaultSource.Src" href="@Model.LogoUrl.Url" target="@Model.LogoUrl.Target" ></a-logo>
+
 
     @if (Model.NavigationItems != null && Model.NavigationItems.Any())
     {
