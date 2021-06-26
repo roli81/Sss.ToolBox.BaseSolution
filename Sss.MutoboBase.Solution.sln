@@ -14,9 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_WebProject", "_WebProject"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toolbox", "Toolbox", "{0560A3A4-E8F0-4328-B9D3-B5EC1865D56C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sss.Mutotobo.Web", "Dit.Umb.ToolBox\Sss.Mutotobo.Web.csproj", "{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sss.Mutobo.Core", "Sss.Mutobo.Core\Sss.Mutobo.Core.csproj", "{2147941A-3725-4B64-84BB-7FDA22DE4066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sss.Mutobo.Core", "Dit.Umb.Mutobo\Sss.Mutobo.Core.csproj", "{2147941A-3725-4B64-84BB-7FDA22DE4066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sss.Mutobo.Web", "Sss.Mutobo.Web\Sss.Mutobo.Web.csproj", "{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,21 +24,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2147941A-3725-4B64-84BB-7FDA22DE4066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2147941A-3725-4B64-84BB-7FDA22DE4066}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2147941A-3725-4B64-84BB-7FDA22DE4066}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2147941A-3725-4B64-84BB-7FDA22DE4066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7} = {AE672E16-A211-4D16-BAF2-FC4BF22048A6}
 		{2147941A-3725-4B64-84BB-7FDA22DE4066} = {0560A3A4-E8F0-4328-B9D3-B5EC1865D56C}
+		{3C82A4E6-2B14-42DD-AC62-7122AB878AD7} = {AE672E16-A211-4D16-BAF2-FC4BF22048A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {70340767-2600-46EC-8C6C-78B7C59BEA16}
