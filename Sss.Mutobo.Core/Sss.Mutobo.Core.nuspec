@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Roland Schenk</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://schenk-smart-solutions.ch/</projectUrl>
+    <description>Base Solution for MUTOBO (Based on Umbraco 8)</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Roland Schenk</copyright>
+    <tags>Umbraco Toolbox </tags>
+  </metadata>
+</package>

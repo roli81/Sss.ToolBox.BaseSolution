@@ -4,6 +4,7 @@ using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.Services;
 using Dit.Umb.ToolBox.Services.Impl;
 using MissingCode.Umbraco.HtmlMinifier;
+using Sss.Mutobo.Web.Interfaces;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
 

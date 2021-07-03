@@ -2,6 +2,7 @@
 using System.Web;
 using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.PoCo;
+using Sss.Mutotobo.Web.Interfaces;
 
 namespace Sss.Mutobo.Core.Modules
 {

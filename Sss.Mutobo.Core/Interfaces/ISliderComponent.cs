@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Sss.Mutotobo.Web.Interfaces;
 
 namespace Sss.Mutobo.Core.Interfaces
 {

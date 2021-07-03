@@ -9,6 +9,11 @@
 }
 
 <o-body>
+    <style>
+        :host > main p {
+            padding: 0 1em;
+        }
+    </style>
 
     @if (Model.Modules != null && Model.Modules.Any())
     {

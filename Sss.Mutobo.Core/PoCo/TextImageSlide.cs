@@ -1,6 +1,7 @@
 ﻿using Sss.Mutobo.Core.Constants;
 using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.Modules;
+using Sss.Mutotobo.Web.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 

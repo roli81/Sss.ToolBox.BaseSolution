@@ -6,6 +6,7 @@ using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.Modules;
 using Sss.Mutobo.Core.PageModels;
 using Sss.Mutobo.Core.PoCo;
+using Sss.Mutobo.Web.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.Web.Models;
@@ -144,6 +145,13 @@ namespace Sss.Mutobo.Core.Services
                                 Cards = _cardService.GetCards(element.value, Constants.DocumentTypes.CardContainer.Fields.Cards),
                                 // set the sort order of the module to ensure the module order
                                 SortOrder = element.index
+                            });
+                            break;
+                        case DocumentTypes.DoubleSliderComponent.Alias:
+                            result.Add(new DoubleSliderComponent(element.value)
+                            {
+                                Slides = SliderService.GetSlides(element.value, DocumentTypes.DoubleSliderComponent.Fields.Slides) as IEnumerable<TextImageSlide>,
+                                SortOrder =  element.index                               
                             });
                             break;
                     }

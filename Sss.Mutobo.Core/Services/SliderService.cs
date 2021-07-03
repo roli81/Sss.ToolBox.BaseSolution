@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.Modules;
 using Sss.Mutobo.Core.PoCo;
+using Sss.Mutobo.Web.Interfaces;
+using Sss.Mutotobo.Web.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using DocumentTypes = Sss.Mutobo.Core.Constants.DocumentTypes;
 
-namespace Dit.Umb.ToolBox.Services.Impl
+namespace Sss.Mutobo.Core.Services
 {
     public class SliderService : ISliderService
     {
@@ -63,6 +61,34 @@ namespace Dit.Umb.ToolBox.Services.Impl
             }
 
             return result;
+        }
+
+        public IEnumerable<TextImageSlide> GetDoubleSlides(IPublishedElement content, string fieldName, int? width = null, int? height = null,
+            bool isGoldenRatio = false)
+        {
+
+            var result = new List<ISliderItem>();
+            if (content.HasValue(fieldName))
+            {
+                var slideContent = content.Value<IEnumerable<IPublishedElement>>(fieldName);
+
+                foreach (var slideNode in slideContent)
+                {
+     
+                        var textImageComponent = new TextImageSlide(slideNode);
+
+                        result.Add(new TextImageSlide(slideNode)
+                        {
+                           Image = slideNode.HasValue(DocumentTypes.Picture.Fields.Image) ? _imageService.GetImage(
+                               slideNode.Value<IPublishedContent>(DocumentTypes.DoubleSliderComponent.Fields.Image), width, height, isGoldenRatio: isGoldenRatio) : null
+                        });
+
+
+
+                }
+
+            }
+
         }
     }
 }

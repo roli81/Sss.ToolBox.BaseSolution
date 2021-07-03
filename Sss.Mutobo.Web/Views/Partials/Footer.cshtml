@@ -2,6 +2,12 @@
 @using Sss.Mutobo.Core.Constants
 @model Sss.Mutobo.Core.Configuration.FooterConfiguration
 <o-footer namespace="footer-" theme="@Model.Theme">
+    <style>
+        :host footer {
+            height: 100%;
+        }
+    </style>
+
     @{
         var index = 0;
     }
@@ -19,7 +25,7 @@
                     {
                         @* QnD-Hack to fit the engagement logo to the correct size *@
                         <style>
-                            :host{
+                            :host {
                                 --footer-logo-max-height:40px;
                                 --footer-logo-max-height-mobile:40px;
                                 --footer-logo-text-font-size:0.4rem;
@@ -38,7 +44,7 @@
                     {
                         <p>
                             @picLink.Text&nbsp;
-                            <br />
+                            <br/>
                             <strong>
                                 <a href="@picLink.Link.Url" target="@picLink.Link.Target">@picLink.Link.Name</a>
                             </strong>

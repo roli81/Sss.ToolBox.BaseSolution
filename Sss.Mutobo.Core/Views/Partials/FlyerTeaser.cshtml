@@ -1,0 +1,18 @@
+﻿@using Sss.Mutobo.Core.Common.Extensions
+@using Sss.Mutobo.Core.Constants
+@using Sss.Mutobo.Core.PoCo
+@using Image = Sss.Mutobo.Core.PoCo.Image
+@model Sss.Mutobo.Core.Modules.Flyer
+@{
+    var img = Model.Image;
+    //new Image();
+    //Model.GetImage(DocumentTypes.Flyer.FlyerImage);
+}
+
+<m-flyer href="@(Model.Link?.Url ?? "#")">
+    <h1>@Model.Title</h1>
+    <p>
+        @Model.TeaserText
+    </p>
+    @(img?.RenderWcPictureTag() ?? new HtmlString(String.Empty))
+</m-flyer>

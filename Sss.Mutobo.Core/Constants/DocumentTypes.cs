@@ -23,6 +23,7 @@
                 public const string Width = "width";
                 public const string Interval = "interval";
                 public const string DisplayType = "displayType";
+                public const string Image = "image";
 
             }
         }

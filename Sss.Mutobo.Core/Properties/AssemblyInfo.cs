@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sss.Mutobo.Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Base Framework for MUTOBO based on Umbraco 8")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Schenk-Smart-Solution")]
 [assembly: AssemblyProduct("Sss.Mutobo.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]

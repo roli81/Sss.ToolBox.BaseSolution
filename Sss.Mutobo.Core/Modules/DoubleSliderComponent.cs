@@ -1,4 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Text;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Mvc.Html;
 using Sss.Mutobo.Core.Constants;
 using Sss.Mutobo.Core.Enum;
 using Sss.Mutobo.Core.Interfaces;
@@ -51,6 +55,19 @@ namespace Sss.Mutobo.Core.Modules
         {
 
 
+        }
+
+        public override IHtmlString RenderModule(HtmlHelper helper)
+        {
+            var bld = new StringBuilder();
+            bld.Append(helper.Partial("~/Views/Partials/DoubleSlider.cshtml", this));
+
+            if (SpacerAfterModule)
+            {
+                bld.Append("<div class=\"spacer\"></div>");
+            }
+
+            return new HtmlString(bld.ToString());
         }
     }
 }

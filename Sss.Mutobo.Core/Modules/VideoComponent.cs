@@ -7,6 +7,7 @@ using System.Web.Mvc.Html;
 using Sss.Mutobo.Core.Constants;
 using Sss.Mutobo.Core.Interfaces;
 using Sss.Mutobo.Core.PoCo;
+using Sss.Mutotobo.Web.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 
