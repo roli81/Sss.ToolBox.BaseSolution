@@ -8,6 +8,7 @@ using Sss.Mutobo.Core.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using Sss.Mutotobo.Web.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 
 namespace Sss.Mutobo.Core.PoCo

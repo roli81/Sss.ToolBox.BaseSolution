@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Sss.Mutobo.Core.Enum;
 using Sss.Mutobo.Core.Interfaces;
+using Sss.Mutotobo.Web.Interfaces;
 
 namespace Sss.Mutobo.Core.Modules
 {

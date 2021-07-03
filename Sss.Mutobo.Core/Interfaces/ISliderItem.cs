@@ -1,4 +1,4 @@
-﻿namespace Sss.Mutobo.Core.Interfaces
+﻿namespace Sss.Mutotobo.Web.Interfaces
 {
     public interface ISliderItem
     {

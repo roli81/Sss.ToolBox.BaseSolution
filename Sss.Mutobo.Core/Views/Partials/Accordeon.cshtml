@@ -1,0 +1,15 @@
+﻿
+@using Sss.Mutobo.Core.Constants
+@using Umbraco.Web.Composing
+@model Sss.Mutobo.Core.Modules.Accordeon
+<m-details>
+    <details >
+        <summary>
+            @Model.Summary.ToUpper()
+        </summary>
+        <p>
+            @Html.Raw(Model.Details)
+            <a href="#" class="close">"TRANSLATE"</a>
+        </p>
+    </details>
+</m-details>

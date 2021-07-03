@@ -1,0 +1,57 @@
+﻿ @inherits Umbraco.Web.Mvc.UmbracoViewPage<Sss.Mutobo.Core.PageModels.BasePage>
+@using System.Globalization
+@using ClientDependency.Core.Mvc
+@using Sss.Mutobo.Core.Configuration
+@using Sss.Mutobo.Core.Interfaces
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = null;
+
+}
+ <!DOCTYPE html>
+@*TODO: set the language attribute dynamically *@
+<html lang="@CultureInfo.CurrentCulture.TwoLetterISOLanguageName">
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    @*<link href="/web-components-cms-template/src/favicon.ico" rel="short" />*@
+
+    @{
+
+        Html.RequiresCss($"~/web-components-cms-template-base/src/es/components/web-components-cms-template/src/css/css/misc.css");
+        Html.RequiresCss($"~/web-components-cms-template-base/src/es/components/web-components-cms-template/src/css/css/fonts.css");
+        Html.RequiresCss("~/web-components-cms-template-base/src/es/components/web-components-cms-template/src/css/variablesWeb4MIndustry.css");
+        Html.RequiresJs($"~/web-components-cms-template-base/wc-config.js?baseUrl=/web-components-cms-template-base/src/es/components/");
+    }
+
+    @Html.RenderCssHere()
+    <title>@Model.PageTitle</title>
+    @Html.Action("Index", "Seo")
+    @if (Model.Theme != null)
+    {
+        @Html.Action("Index", "CssVariables", new { Theme = Model.Theme as ITheme })
+    }
+    
+    <style>
+        @@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+        html {
+            --color-hover: #800080;
+            --color-secondary: black;
+            --color: #000080;
+            --background-color: #efefef;
+            --font-family: 'Wendy One', sans-serif;
+            --font-size: 1.3rem;
+        }
+    </style>
+
+</head>
+<body>
+    <p-general>
+        @Html.Partial("~/Views/Partials/Header.cshtml", Model.HeaderConfiguration)
+        @RenderBody()
+        @Html.Partial("~/Views/Partials/Footer.cshtml", Model.FooterConfiguration as Sss.Mutobo.Core.Configuration.FooterConfiguration)
+    </p-general>
+
+@Html.RenderJsHere()
+</body>
+</html>

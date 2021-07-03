@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\uSync.8.9.3\build\uSync.props" Condition="Exists('..\packages\uSync.8.9.3\build\uSync.props')" />
+  <Import Project="..\packages\UmbracoCms.8.14.0\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.8.14.0\build\UmbracoCms.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,8 +10,8 @@
     <ProjectGuid>{2147941A-3725-4B64-84BB-7FDA22DE4066}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sss.Mutotobo.Web</RootNamespace>
-    <AssemblyName>Sss.Mutotobo.Web</AssemblyName>
+    <RootNamespace>Sss.Mutobo.Core</RootNamespace>
+    <AssemblyName>Sss.Mutobo.Core</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -87,6 +90,9 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.4.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
@@ -284,6 +290,15 @@
     <Reference Include="UmbracoExamine.PDF, Version=0.8.7634.9991, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.UmbracoExamine.PDF.2.1.0\lib\net472\UmbracoExamine.PDF.dll</HintPath>
     </Reference>
+    <Reference Include="uSync8.BackOffice, Version=8.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uSync.8.9.3\lib\net472\uSync8.BackOffice.dll</HintPath>
+    </Reference>
+    <Reference Include="uSync8.Core, Version=8.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uSync.Core.8.9.3\lib\net472\uSync8.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uSync.History.8.9.3\lib\net472\uSync8.HistoryView.dll</HintPath>
+    </Reference>
     <Reference Include="WebMarkupMin.AspNet.Common, Version=2.5.0.0, Culture=neutral, PublicKeyToken=99472178d266584b, processorArchitecture=MSIL">
       <HintPath>..\packages\WebMarkupMin.AspNet.Common.2.5.0\lib\net45\WebMarkupMin.AspNet.Common.dll</HintPath>
     </Reference>
@@ -472,11 +487,294 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="App_Plugins\uSync8\addons.json" />
+    <None Include="App_Plugins\uSync8\package.manifest" />
+    <None Include="App_Plugins\uSyncHistory\package.manifest" />
+    <None Include="config\BackOfficeTours\getting-started.json" />
+    <None Include="config\ClientDependency.config" />
+    <Content Include="config\connectionStrings.config" />
+    <None Include="config\HealthChecks.config" />
+    <None Include="config\imageprocessor\cache.config" />
+    <None Include="config\imageprocessor\processing.config" />
+    <None Include="config\imageprocessor\security.config" />
+    <None Include="config\serilog.config" />
+    <None Include="config\serilog.user.config" />
+    <None Include="config\tinyMceConfig.config" />
+    <None Include="config\umbracoSettings.config" />
+    <None Include="config\uSync8.config" />
     <None Include="Controllers\PageControllers\SearchResultsController.cs.bak" />
     <None Include="packages.config" />
+    <Content Include="App_Plugins\uSync8\backoffice\uSync8\dashboard.html" />
+    <Content Include="App_Plugins\uSync8\backoffice\uSync8\uSyncDashboardController.js" />
+    <Content Include="App_Plugins\uSync8\changeDialog.html" />
+    <Content Include="App_Plugins\uSync8\changeDialogController.js" />
+    <Content Include="App_Plugins\uSync8\components\uSyncProgressView.html" />
+    <Content Include="App_Plugins\uSync8\components\usyncProgressViewComponent.js" />
+    <Content Include="App_Plugins\uSync8\components\uSyncReportView.html" />
+    <Content Include="App_Plugins\uSync8\components\uSyncReportViewComponent.js" />
+    <Content Include="App_Plugins\uSync8\lang\en-US.xml" />
+    <Content Include="App_Plugins\uSync8\lang\nl-NL.xml" />
+    <Content Include="App_Plugins\uSync8\settings\default.html" />
+    <Content Include="App_Plugins\uSync8\settings\expansion.html" />
+    <Content Include="App_Plugins\uSync8\settings\expansionController.js" />
+    <Content Include="App_Plugins\uSync8\settings\settings.html" />
+    <Content Include="App_Plugins\uSync8\settings\settingsController.js" />
+    <Content Include="App_Plugins\uSync8\settings\uSyncController.js" />
+    <Content Include="App_Plugins\uSync8\usync.css" />
+    <Content Include="App_Plugins\uSync8\uSyncHub.js" />
+    <Content Include="App_Plugins\uSync8\uSyncService.js" />
+    <Content Include="App_Plugins\uSync8\usync_891.css" />
+    <Content Include="App_Plugins\uSync8\uSync_891.js" />
+    <Content Include="App_Plugins\uSyncHistory\history.html" />
+    <Content Include="App_Plugins\uSyncHistory\historyDialog.html" />
+    <Content Include="App_Plugins\uSyncHistory\syncHistoryController.js" />
+    <Content Include="App_Plugins\uSyncHistory\syncHistoryDialogController.js" />
+    <Content Include="App_Plugins\uSyncHistory\syncHistoryService.js" />
+    <Content Include="config\grid.editors.config.js" />
+    <Content Include="config\Lang\cs-CZ.user.xml" />
+    <Content Include="config\Lang\da-DK.user.xml" />
+    <Content Include="config\Lang\de-DE.user.xml" />
+    <Content Include="config\Lang\en-GB.user.xml" />
+    <Content Include="config\Lang\en-US.user.xml" />
+    <Content Include="config\Lang\es-ES.user.xml" />
+    <Content Include="config\Lang\fr-FR.user.xml" />
+    <Content Include="config\Lang\he-IL.user.xml" />
+    <Content Include="config\Lang\it-IT.user.xml" />
+    <Content Include="config\Lang\ja-JP.user.xml" />
+    <Content Include="config\Lang\ko-KR.user.xml" />
+    <Content Include="config\Lang\nb-NO.user.xml" />
+    <Content Include="config\Lang\nl-NL.user.xml" />
+    <Content Include="config\Lang\pl-PL.user.xml" />
+    <Content Include="config\Lang\pt-BR.user.xml" />
+    <Content Include="config\Lang\ru-RU.user.xml" />
+    <Content Include="config\Lang\sv-SE.user.xml" />
+    <Content Include="config\Lang\zh-CN.user.xml" />
+    <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="Global.asax" />
+    <Content Include="uSync\v8\ContentTypes\accordeon.config" />
+    <Content Include="uSync\v8\ContentTypes\accordeonitem.config" />
+    <Content Include="uSync\v8\ContentTypes\articlepage.config" />
+    <Content Include="uSync\v8\ContentTypes\basepage.config" />
+    <Content Include="uSync\v8\ContentTypes\blogmodule.config" />
+    <Content Include="uSync\v8\ContentTypes\blogpage.config" />
+    <Content Include="uSync\v8\ContentTypes\card.config" />
+    <Content Include="uSync\v8\ContentTypes\cardcontainer.config" />
+    <Content Include="uSync\v8\ContentTypes\configurationfolder.config" />
+    <Content Include="uSync\v8\ContentTypes\contact.config" />
+    <Content Include="uSync\v8\ContentTypes\contentpage.config" />
+    <Content Include="uSync\v8\ContentTypes\doubleslider.config" />
+    <Content Include="uSync\v8\ContentTypes\email.config" />
+    <Content Include="uSync\v8\ContentTypes\flyer.config" />
+    <Content Include="uSync\v8\ContentTypes\footerconfiguration.config" />
+    <Content Include="uSync\v8\ContentTypes\formpage.config" />
+    <Content Include="uSync\v8\ContentTypes\global.config" />
+    <Content Include="uSync\v8\ContentTypes\headerconfiguration.config" />
+    <Content Include="uSync\v8\ContentTypes\heading.config" />
+    <Content Include="uSync\v8\ContentTypes\homepage.config" />
+    <Content Include="uSync\v8\ContentTypes\links.config" />
+    <Content Include="uSync\v8\ContentTypes\mailconfiguration.config" />
+    <Content Include="uSync\v8\ContentTypes\module.config" />
+    <Content Include="uSync\v8\ContentTypes\navblock.config" />
+    <Content Include="uSync\v8\ContentTypes\newsletter.config" />
+    <Content Include="uSync\v8\ContentTypes\personnelcard.config" />
+    <Content Include="uSync\v8\ContentTypes\picture.config" />
+    <Content Include="uSync\v8\ContentTypes\picturelink.config" />
+    <Content Include="uSync\v8\ContentTypes\picturemodule.config" />
+    <Content Include="uSync\v8\ContentTypes\quote.config" />
+    <Content Include="uSync\v8\ContentTypes\richtextcomponent.config" />
+    <Content Include="uSync\v8\ContentTypes\searchresults.config" />
+    <Content Include="uSync\v8\ContentTypes\seoconfiguration.config" />
+    <Content Include="uSync\v8\ContentTypes\slidercomponent.config" />
+    <Content Include="uSync\v8\ContentTypes\teaser.config" />
+    <Content Include="uSync\v8\ContentTypes\teaserpage.config" />
+    <Content Include="uSync\v8\ContentTypes\teasers.config" />
+    <Content Include="uSync\v8\ContentTypes\textimageslide.config" />
+    <Content Include="uSync\v8\ContentTypes\theme.config" />
+    <Content Include="uSync\v8\ContentTypes\tourpage.config" />
+    <Content Include="uSync\v8\ContentTypes\tours.config" />
+    <Content Include="uSync\v8\ContentTypes\videocomponent.config" />
+    <Content Include="uSync\v8\ContentTypes\xmlsitemap.config" />
+    <Content Include="uSync\v8\DataTypes\AccordeonItemSummaryTextbox.config" />
+    <Content Include="uSync\v8\DataTypes\AllModules.config" />
+    <Content Include="uSync\v8\DataTypes\ApprovedColor.config" />
+    <Content Include="uSync\v8\DataTypes\BasePageFooterConfigurationNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\BasePageHeaderConfigurationNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\BasePageRedirectLinkMultiURLPickerSingle.config" />
+    <Content Include="uSync\v8\DataTypes\BasePageSearchEngineRelativePrioritySlider.config" />
+    <Content Include="uSync\v8\DataTypes\BasePageThemeNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\BasisSeiteSuchmaschinenfrequenzDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\BildModulWidthNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\BlogHowManyPostsShouldBeShownSlider.config" />
+    <Content Include="uSync\v8\DataTypes\BlogModuleParentPageContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\BlogpostCategoriesTags.config" />
+    <Content Include="uSync\v8\DataTypes\CardContainerNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\CardContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\CardImageMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\CheckboxList.config" />
+    <Content Include="uSync\v8\DataTypes\ContactContactIntroRichTextEditor.config" />
+    <Content Include="uSync\v8\DataTypes\ContactMapCoordinatesOpenStreetMaps.config" />
+    <Content Include="uSync\v8\DataTypes\ContactPickAContactFormFormPicker.config" />
+    <Content Include="uSync\v8\DataTypes\ContentBaseContentGridLayout.config" />
+    <Content Include="uSync\v8\DataTypes\ContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\DatePicker.config" />
+    <Content Include="uSync\v8\DataTypes\DatePickerWithTime.config" />
+    <Content Include="uSync\v8\DataTypes\Dropdown.config" />
+    <Content Include="uSync\v8\DataTypes\DropdownMultiple.config" />
+    <Content Include="uSync\v8\DataTypes\EventOrtEventOrtNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerDirectionDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerPositionDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerRotationSlider.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerSlider.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerTextHeightNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\FlyerTextWidthNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\FooterConfigurationAdressArea.config" />
+    <Content Include="uSync\v8\DataTypes\FooterConfigurationLinkArea.config" />
+    <Content Include="uSync\v8\DataTypes\FooterConfigurationNavigationArea.config" />
+    <Content Include="uSync\v8\DataTypes\FooterConfigurationPictureLinksNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\FormPageMailkonfigurationContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\FormPageSuccessPageContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\GaleriekomponenteDisplayTypeDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\GaleriekomponenteHeightNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\GaleriekomponenteHeightNumeric1.config" />
+    <Content Include="uSync\v8\DataTypes\GaleriekomponenteWidthNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\GalleryTeaserLinkContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\HeadingRenderAsDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\HeadingTextbox.config" />
+    <Content Include="uSync\v8\DataTypes\HomeCallToActionLinkContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\HomeColorThemeRadioButtonList.config" />
+    <Content Include="uSync\v8\DataTypes\HomeContentGridLayout.config" />
+    <Content Include="uSync\v8\DataTypes\HomeFontRadioButtonList.config" />
+    <Content Include="uSync\v8\DataTypes\HomeLogoMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\HomePageDisturberNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\ImageCropper.config" />
+    <Content Include="uSync\v8\DataTypes\ImageMediaPickerSingle.config" />
+    <Content Include="uSync\v8\DataTypes\InterpreterDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\isPushNewsToggle.config" />
+    <Content Include="uSync\v8\DataTypes\LabelBigint.config" />
+    <Content Include="uSync\v8\DataTypes\LabelDatetime.config" />
+    <Content Include="uSync\v8\DataTypes\LabelDecimal.config" />
+    <Content Include="uSync\v8\DataTypes\LabelInteger.config" />
+    <Content Include="uSync\v8\DataTypes\LabelString.config" />
+    <Content Include="uSync\v8\DataTypes\LabelTime.config" />
+    <Content Include="uSync\v8\DataTypes\ListViewContent.config" />
+    <Content Include="uSync\v8\DataTypes\ListViewMedia.config" />
+    <Content Include="uSync\v8\DataTypes\ListViewMembers.config" />
+    <Content Include="uSync\v8\DataTypes\LocationProgramContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\LocationTicketListLocationContentPicker.config" />
+    <Content Include="uSync\v8\DataTypes\MailConfigurationMailSubjectTextbox.config" />
+    <Content Include="uSync\v8\DataTypes\MediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\MemberPicker.config" />
+    <Content Include="uSync\v8\DataTypes\ModuleField.config" />
+    <Content Include="uSync\v8\DataTypes\MultipleMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\MultiURLPicker.config" />
+    <Content Include="uSync\v8\DataTypes\MultiURLPickerSingle.config" />
+    <Content Include="uSync\v8\DataTypes\NavigationBaseKeywordsTags.config" />
+    <Content Include="uSync\v8\DataTypes\Numeric.config" />
+    <Content Include="uSync\v8\DataTypes\PeopleFeaturedPeopleMultinodeTreepicker.config" />
+    <Content Include="uSync\v8\DataTypes\PersonDepartmentTags.config" />
+    <Content Include="uSync\v8\DataTypes\PersonPhotoMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\ProductFeaturesNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\ProductPhotosMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\ProductPriceDecimal.config" />
+    <Content Include="uSync\v8\DataTypes\ProductsDefaultCurrencyDropdownList.config" />
+    <Content Include="uSync\v8\DataTypes\ProductsFeaturedProductsMultinodeTreepicker.config" />
+    <Content Include="uSync\v8\DataTypes\ProgramArchiveComponentSeasonProgramsNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\ProgrammDownloadMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\Radiobox.config" />
+    <Content Include="uSync\v8\DataTypes\RichtextEditor.config" />
+    <Content Include="uSync\v8\DataTypes\SliderComponentNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\SliderComponentNestedContent1.config" />
+    <Content Include="uSync\v8\DataTypes\Tags.config" />
+    <Content Include="uSync\v8\DataTypes\TeaserPage1erTeaser.config" />
+    <Content Include="uSync\v8\DataTypes\TeaserPage3erTeaser.config" />
+    <Content Include="uSync\v8\DataTypes\TeaserPageImageSize.config" />
+    <Content Include="uSync\v8\DataTypes\TeaserPageTeaser.config" />
+    <Content Include="uSync\v8\DataTypes\TeaserRenderAsDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\Textarea.config" />
+    <Content Include="uSync\v8\DataTypes\Textarea3Rows.config" />
+    <Content Include="uSync\v8\DataTypes\TextBildGalerieNestedContent.config" />
+    <Content Include="uSync\v8\DataTypes\Textstring.config" />
+    <Content Include="uSync\v8\DataTypes\ThemeBackgroundColorColorPicker.config" />
+    <Content Include="uSync\v8\DataTypes\ThemeDropdown.config" />
+    <Content Include="uSync\v8\DataTypes\ThemeDropdownFontFamily.config" />
+    <Content Include="uSync\v8\DataTypes\TrueFalse.config" />
+    <Content Include="uSync\v8\DataTypes\Upload.config" />
+    <Content Include="uSync\v8\DataTypes\VideoComponentEmeddedMarkdownEditor.config" />
+    <Content Include="uSync\v8\DataTypes\VideoComponentMediaPicker.config" />
+    <Content Include="uSync\v8\DataTypes\VideoKomponenteHeightNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\VideoKomponenteNumeric.config" />
+    <Content Include="uSync\v8\DataTypes\VideoKomponenteWidthNumeric.config" />
+    <Content Include="uSync\v8\Languages\de-ch.config" />
+    <Content Include="uSync\v8\MediaTypes\file.config" />
+    <Content Include="uSync\v8\MediaTypes\folder.config" />
+    <Content Include="uSync\v8\MediaTypes\image.config" />
+    <Content Include="uSync\v8\Templates\articlepage.config" />
+    <Content Include="uSync\v8\Templates\basepage.config" />
+    <Content Include="uSync\v8\Templates\homepage.config" />
+    <Content Include="uSync\v8\Templates\teaser.config" />
+    <Content Include="uSync\v8\Templates\teaserpage.config" />
+    <Content Include="uSync\v8\Templates\wcarticlepage.config" />
+    <Content Include="uSync\v8\Templates\wcbasepage.config" />
+    <Content Include="uSync\v8\Templates\wccontentpage.config" />
+    <Content Include="uSync\v8\Templates\wcformpage.config" />
+    <Content Include="uSync\v8\Templates\wchomepage.config" />
+    <Content Include="uSync\v8\Templates\wcimpressumpage.config" />
+    <Content Include="uSync\v8\Templates\wcsearchresultspage.config" />
+    <Content Include="uSync\v8\Templates\wcteaserpage.config" />
+    <Content Include="uSync\v8\Templates\xmlsitemap.config" />
+    <Content Include="Views\NonUmbraco\WCScriptsView.cshtml" />
+    <Content Include="Views\Partials\Accordeon.cshtml" />
+    <Content Include="Views\Partials\ArticleContent.cshtml" />
+    <Content Include="Views\Partials\BlogEntry.cshtml" />
+    <Content Include="Views\Partials\BlogList.cshtml" />
+    <Content Include="Views\Partials\CssVariables.cshtml" />
+    <Content Include="Views\Partials\DoubleSlider.cshtml" />
+    <Content Include="Views\Partials\FlyerTeaser.cshtml" />
+    <Content Include="Views\Partials\FontFaces.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\GalleryTeaser.cshtml" />
+    <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
+    <Content Include="Views\Partials\HighLightList.cshtml" />
+    <Content Include="Views\Partials\LanguageSwitcher.cshtml" />
+    <Content Include="Views\Partials\Modules\CallToActionButton.cshtml" />
+    <Content Include="Views\Partials\Modules\CardContainer.cshtml" />
+    <Content Include="Views\Partials\Modules\Quote.cshtml" />
+    <Content Include="Views\Partials\NestedTeaser.cshtml" />
+    <Content Include="Views\Partials\Newsletter.cshtml" />
+    <Content Include="Views\Partials\NewsletterForm.cshtml" />
+    <Content Include="Views\Partials\SearchForm.cshtml" />
+    <Content Include="Views\Partials\SearchResults.cshtml" />
+    <Content Include="Views\Partials\SEOConfiguration.cshtml" />
+    <Content Include="Views\Partials\SimpleContactForm.cshtml" />
+    <Content Include="Views\Partials\Slider.cshtml" />
+    <Content Include="Views\Partials\Stamp.cshtml" />
+    <Content Include="Views\Partials\Teaser.cshtml" />
+    <Content Include="Views\Partials\TextImageTeaser.cshtml" />
+    <Content Include="Views\Partials\VideoComponent.cshtml" />
+    <Content Include="Views\Partials\WideTeaser.cshtml" />
+    <Content Include="Views\WCArticlePage.cshtml" />
+    <Content Include="Views\WCBasePage.cshtml" />
+    <Content Include="Views\WCContentPage.cshtml" />
+    <Content Include="Views\WCFormPage.cshtml" />
+    <Content Include="Views\WCHomePage.cshtml" />
+    <Content Include="Views\WCSearchResultsPage.cshtml" />
+    <Content Include="Views\WCTeaserPage.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\XmlSiteMap.cshtml" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Compositions\" />
+    <Folder Include="uSync\v8\Macros\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
@@ -485,5 +783,12 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.14.0\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.14.0\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.8.14.0\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.8.14.0\build\UmbracoCms.targets'))" />
+    <Error Condition="!Exists('..\packages\uSync.8.9.3\build\uSync.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.9.3\build\uSync.props'))" />
+    <Error Condition="!Exists('..\packages\uSync.8.9.3\build\uSync.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\uSync.8.9.3\build\uSync.targets'))" />
   </Target>
+  <Import Project="..\packages\UmbracoCms.8.14.0\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.8.14.0\build\UmbracoCms.targets')" />
+  <Import Project="..\packages\uSync.8.9.3\build\uSync.targets" Condition="Exists('..\packages\uSync.8.9.3\build\uSync.targets')" />
 </Project>

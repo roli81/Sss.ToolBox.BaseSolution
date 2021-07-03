@@ -1,0 +1,17 @@
+﻿@using ClientDependency.Core.Mvc
+@using Sss.Mutobo.Core.PageModels
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Sss.Mutobo.Core.PageModels.ArticlePage>
+@{
+
+
+
+    Layout = "WCBasePage.cshtml";
+
+}
+
+<o-body>
+    @Html.Partial("~/Views/Partials/ArticleContent.cshtml", Model)
+    <div>
+        @Html.Raw(Model.MainContent)
+    </div>
+</o-body>
